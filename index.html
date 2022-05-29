@@ -7,26 +7,45 @@
     <title>Criação de Personagem</title>
 </head>
 <body>
-    <form>
-        <label>
-            Nome
-            <input type="text"/>
-        </label>
-        <label>
-            Classe
-            <select>
-                <option disabled selected>Selecione</option>
-                <option>Paladin</option>
-                <option>Guerreiro</option>
-                <option>Ladino</option>
-                <option>Sacerdote</option>
-                <option>Feiticeiro</option>
-                <option value="xama">Xamã</option>
-                <option>Druida</option>
-            </select>
-        </label>
-        <input type="checkbox"/>
-        <input type="submit" action="index.html" value="Criar Personagem"/>
-    </form>
+    <div class="container">
+        <form>
+            <label>
+                Nome
+                <input type="text"/>
+            </label>
+            <label>
+                Classe
+                <select>
+                    <option disabled selected>Selecione</option>
+                    <option>Paladin</option>
+                    <option>Guerreiro</option>
+                    <option>Ladino</option>
+                    <option>Sacerdote</option>
+                    <option>Feiticeiro</option>
+                    <option value="xama">Xamã</option>
+                    <option>Druida</option>
+                </select>
+            </label>
+            <label>
+                <input type="checkbox" name="char-type1" value="PvP" />
+                Eu quero jogar contra outros players
+            </label>
+            <label>
+                <input type="checkbox" name="char-type2" value="PvE" />
+                Eu quero jogar conteúdo single player
+            </label>
+            <p>Selecione a Faccção do Personagem</p>
+            <label>
+                <input type="radio" name="faccao" value="Leste"/>
+                Leste
+            </label>
+            <label>
+                <input type="radio" name="faccao" value="Oeste"/>
+                Oeste
+            </label>
+
+            <input type="submit" action="index.html" value="Criar Personagem"/>
+        </form>
+    </div>
 </body>
 </html>
